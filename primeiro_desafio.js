@@ -10,12 +10,12 @@ Imprime no console o valor que será gasto de combustível para realizar esta vi
 */
 
 const precoDoCombustivel = 5.79;
-const quilometrosPorLitro = 10;
-const distaciaDaViagem = 100;
+const quilometrosPorLitro = 12;
+const distaciaDaViagem = 1580;
 
 const result = distaciaDaViagem / quilometrosPorLitro * precoDoCombustivel;
 
-console.log(result);
+console.log(result.toFixed(2));
 
 
 
