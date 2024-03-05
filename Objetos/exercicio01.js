@@ -15,9 +15,14 @@ class Carro{
     constructor(marca, cor, gastoMedioPorKM){
         this.marca = marca;
         this.cor = cor;
-        this.gastoMedioPorKM;
+        this.gastoMedioPorKM = gastoMedioPorKM;
     }
 
+    calcularGastoDePercurso(distancia, precoDoCombustivel){
+        return distancia * this.gastoMedioPorKM * precoDoCombustivel
+
+    }
 }
 
 const uno = new Carro('Fiat', 'Prata', 1/12);
+console.log(uno.calcularGastoDePercurso(70, 5));
